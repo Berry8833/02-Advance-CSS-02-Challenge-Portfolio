@@ -189,3 +189,57 @@ header nav ul li a:hover {
         text-align: center; /* Center paragraph text on small screens */
     }
 }
+/* hero section end */
+
+/* About me section start */
+.section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    padding: 20px;
+    text-align: left;
+    border: 1px solid lightsteelblue;
+    margin-bottom: 20px;
+    background-color: paleturquoise;
+}
+
+/* Section Title */
+.section-title {
+    flex-shrink: 0;
+    padding-right: 20px;
+    text-align: center; /* Center-align title on smaller screens */
+}
+
+/* Section Content */
+.section-content {
+    border-left: 4px solid #333;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+    /* Section adjustments for larger screens */
+    .section {
+        flex-direction: row; /* Align content side by side on larger screens */
+    }
+
+    /* Section Title */
+    .section-title {
+        min-width: 150px;
+        text-align: left; /* Align title left on larger screens */
+    }
+
+    /* Contact Info */
+    .contact-info {
+        flex-direction: row; /* Align elements side by side on larger screens */
+    }
+
+    .contact-info > * {
+        flex: 1;
+        margin: 15px; /* Space between elements */
+    }
+
+    .contact-info iframe {
+        height: 400px; /* Adjust map height on larger screens */
+    }
+}

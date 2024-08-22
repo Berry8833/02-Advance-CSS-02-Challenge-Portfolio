@@ -424,3 +424,38 @@ header nav ul li a:hover {
 .contact-form a {
     text-decoration: none;
 }
+
+/* Footer Styles */
+footer {
+    padding: 20px 30px;
+    text-align: center;
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    border-top: 1px solid violet;
+}
+
+footer h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+footer div {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: lightcyan;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: lightsteelblue;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    background-color: lightseagreen;
+}

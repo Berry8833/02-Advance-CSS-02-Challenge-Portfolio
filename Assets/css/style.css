@@ -265,3 +265,162 @@ header nav ul li a:hover {
 .work-gallery img:hover {
     transform: scale(1.1);
 }
+
+/* Contact me section */
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    margin: 15px 0; /* Add margin between elements */
+    width: 100%; /* Make elements full-width on smaller screens */
+}
+
+.contact-info iframe {
+    height: 300px;
+    width: 100%; /* Make the map full-width on smaller screens */
+}
+
+/* Responsive Adjustments */
+@media screen and (min-width: 768px) {
+    /* Section adjustments for larger screens */
+    .section {
+        flex-direction: row; /* Align content side by side on larger screens */
+    }
+
+    /* Section Title */
+    .section-title {
+        min-width: 150px;
+        text-align: left; /* Align title left on larger screens */
+    }
+
+    /* Contact Info */
+    .contact-info {
+        flex-direction: row; /* Align elements side by side on larger screens */
+    }
+
+    .contact-info > * {
+        flex: 1;
+        margin: 15px; /* Space between elements */
+    }
+
+    .contact-info iframe {
+        height: 400px; /* Adjust map height on larger screens */
+    }
+}
+
+/* Additional Styling */
+#contact {
+    background-color: peachpuff;
+    padding: 25px;
+    margin: 3%;
+    line-height: 2;
+    border-radius: 45px;
+}
+
+.contact {
+    background: magenta;
+}
+
+.contact h2 {
+    color: navy;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid forestgreen;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: navy;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: mistyrose;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: palegreen;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: plum;
+    color: azure;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: lavender;
+    background: lightgreen;
+}
+
+.section-content nav ul {
+    list-style: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .section-title h2 {
+        margin-bottom: 20px; /* Adds space below h2 elements */
+    }
+
+    .student {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: none; /* Remove maximum width on small screens */
+        height: auto; /* Allow height to adjust on small screens */
+        margin-right: 0;
+        margin-bottom: 20px; /* Space below the image when stacked */
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+        padding-left: 0; /* Reset padding on small screens */
+    }
+
+    .text-container p {
+        text-align: center; /* Center paragraph text on small screens */
+    }
+
+    .section-content {
+        padding-left: 10px; /* Reduce padding for section content on small screens */
+        padding-right: 10px; /* Add padding-right for balance */
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack contact info items vertically */
+    }
+
+    .contact-info div {
+        margin-bottom: 20px; /* Space between stacked contact info items */
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px; /* Slightly smaller font size on mobile */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Slightly smaller button text on mobile */
+    }
+}
+
+.contact-info a {
+    color: indigo;
+}
+
+.contact-form a {
+    text-decoration: none;
+}

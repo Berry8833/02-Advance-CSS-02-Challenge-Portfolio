@@ -1,0 +1,90 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header style start */
+header {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 9999;
+}
+
+header h1 a {
+    font-weight: bold;
+    font-size: 35px;
+    color: navy;
+    text-shadow: 0 0 10px cornflowerblue;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* Navigation link styles */
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 22px;
+    color: darkslategrey;
+    text-shadow: 0 0 10px hotpink;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: lightcyan;
+    color: olive;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center; /* Center the header content */
+    }
+
+    header h1 {
+        margin-bottom: 20px;
+        text-align: center; /* Center the logo */
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center; /* Center the nav links */
+        text-align: center;  /* Center the text in nav links */
+    }
+
+    header nav ul li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+}

@@ -243,3 +243,25 @@ header nav ul li a:hover {
         height: 400px; /* Adjust map height on larger screens */
     }
 }
+
+/* Work section start */
+.work-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.work-gallery a {
+    margin-bottom: 20px;
+}
+
+.work-gallery img {
+    width: 100%; /* Make images full-width */
+    max-width: 200px; /* Set a max width */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-gallery img:hover {
+    transform: scale(1.1);
+}

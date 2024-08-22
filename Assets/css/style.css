@@ -88,3 +88,104 @@ header nav ul li a:hover {
         font-size: 20px;
     }
 }
+/* Navigation / header end */
+
+/* Student Section Styles start */
+.image-container {
+    position: relative;
+    width: 50%; /* Occupy half of the row */
+    max-width: 400px; /* Ensure a maximum width for consistency */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 200px; /* Ensure a minimum height for consistency */
+}
+
+.hover-img {
+    width: 100%;
+    height: 100%; /* Ensure image fills the container */
+    object-fit: cover; /* Cover the container without distortion */
+    transition: opacity 0.3s ease;
+}
+
+.img-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.img-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0; /* Initially hidden */
+}
+
+/* Hover effect to show the back image */
+.image-container:hover .img-front {
+    opacity: 0;
+}
+
+.image-container:hover .img-back {
+    opacity: 1;
+}
+
+/* General student section styling */
+.student {
+    display: flex; /* Align image and text in the same row */
+    align-items: flex-start; /* Align items to the top of the container */
+    justify-content: space-between; /* Space between image and text */
+    padding: 50px;
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Text container styles */
+.text-container {
+    width: 50%; /* Occupy the remaining half of the row */
+    padding-left: 20px; /* Space between image and text */
+    box-sizing: border-box; /* Include padding in the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Center the h2 tag above the p tag */
+.text-container h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Space between h2 and p */
+}
+
+/* Align the paragraph text to the left */
+.text-container p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .student {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: none; /* Remove maximum width on small screens */
+        height: auto; /* Allow height to adjust on small screens */
+        margin-right: 0;
+        margin-bottom: 20px; /* Space below the image when stacked */
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: center;
+        padding-left: 0; /* Reset padding on small screens */
+    }
+
+    .text-container p {
+        text-align: center; /* Center paragraph text on small screens */
+    }
+}
